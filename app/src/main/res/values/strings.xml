@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lab_4.1</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="txt_scores">Scores</string>
+    <string name="a_score">0</string>
+    <string name="b_score">0</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    <string name="scr_1">1</string>
+    <string name="scr_2">2</string>
+    <string name="scr_3">3</string>
+    <string name="scr_4">6</string>
+</resources>
