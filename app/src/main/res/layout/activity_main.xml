@@ -149,6 +149,7 @@
                 android:textStyle="bold"
                 android:textSize="35sp"
                 android:gravity="center"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:padding="1dp"
                 android:layout_marginEnd="5dp"
@@ -156,6 +157,7 @@
                 android:background="@drawable/btn"/>
 
         </LinearLayout>
+
 
         <RadioGroup
             android:id="@+id/RG"
@@ -173,7 +175,8 @@
                 android:textStyle="bold"
                 android:textSize="24sp"
                 android:textColor="@color/black"
-                android:layout_marginEnd="10dp">
+                android:layout_marginEnd="10dp"
+                android:checked="true">
             </RadioButton>
             <RadioButton
                 android:id="@+id/r2"
