@@ -13,4 +13,20 @@
     <color name="btn_pressed">#F0AFC6FF</color>
     <color name="gray">#6E6E6E</color>
     <color name="bg_tgl">#AFA7A7</color>
+
+    <color name="team_text_color">#272626</color>
+    <color name="team_a_bg">#E4F12222</color>
+    <color name="team_b_bg">#4070EC</color>
+
+    <color name="score_color">#DC7A7A7A</color>
+    <color name="score_value_a_color">#FF4545</color>
+    <color name="score_value_b_color">#74D6FD</color>
+
+    <color name="vs_color">#F31010</color>
+
+    <color name="shadowcolor">#07029C</color>
+    <color name="insidecolor">#ED1B1B</color>
+
+
+
 </resources>

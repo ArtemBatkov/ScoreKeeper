@@ -12,6 +12,70 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
     </style>
 
+    <style name="Theme.Background" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:src">@drawable/main_bg_light</item>
+        <item name="android:alpha">0.4</item>
+    </style>
+
+    <style name="Theme.Teams" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- This theme is used for TextViews of the names of the team-->
+        <!-- size of tv -->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+
+        <!--text adjust-->
+        <item name="android:textColor">@color/team_text_color</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">@font/athletic</item>
+
+        <!--margins-->
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="Theme.Scores" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/athletic</item>
+        <item name="android:shadowRadius">0.001</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowDx">2.2</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.ScoreValue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/droid_serif</item>
+    </style>
+
+    <style name="Theme.VS" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/vs_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Switch" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/insidecolor</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/shadowcolor</item>
+        <item name="android:shadowDy">5.5</item>
+        <item name="android:shadowDx">3.5</item>
+    </style>
+
+    <style name="Theme.RadioButtons" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/droid_serif</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textStyle">bold</item>
+
+
+    </style>
 </resources>

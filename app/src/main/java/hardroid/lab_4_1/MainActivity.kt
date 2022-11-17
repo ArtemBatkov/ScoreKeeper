@@ -8,6 +8,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Switch
 import android.widget.TextView
+import androidx.appcompat.widget.SwitchCompat
 
 /*
 THIS FILE IS SCOREKEEPER LOGIC
@@ -22,12 +23,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Initialize ALL Views
+        var TeamA: TextView = findViewById(R.id.txt_team_a)
+        var TeamB: TextView = findViewById(R.id.txt_team_b)
         var Score_A: TextView = findViewById<TextView>(R.id.a_score)
         var Score_B: TextView = findViewById<TextView>(R.id.b_score)
-        var Switch: Switch = findViewById<Switch>(R.id.toggle)
+        var Switch: SwitchCompat = findViewById<SwitchCompat>(R.id.toggle)
         var Plus: View =  findViewById(R.id.plus)
         var Minus: Button = findViewById<Button>(R.id.minus)
         var RG: RadioGroup = findViewById<RadioGroup>(R.id.RG)
+
 
 
         //Plus reaction
