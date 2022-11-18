@@ -54,11 +54,19 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">30sp</item>
         <item name="android:fontFamily">@font/droid_serif</item>
+
     </style>
 
     <style name="Theme.VS" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColor">@color/vs_color</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.Buttons" parent="Theme.AppCompat.Light.NoActionBar">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="false" android:background="@drawable/btn_unpressed" />
+            <item android:state_pressed="true" android:drawable="@drawable/btn_pressed" />
+        </selector>
     </style>
 
     <style name="Theme.Switch" parent="Theme.AppCompat.Light.NoActionBar">
@@ -67,6 +75,7 @@
         <item name="android:shadowColor">@color/shadowcolor</item>
         <item name="android:shadowDy">5.5</item>
         <item name="android:shadowDx">3.5</item>
+        <item name="switchPadding">10dp</item>
     </style>
 
     <style name="Theme.RadioButtons" parent="Theme.AppCompat.Light.NoActionBar">

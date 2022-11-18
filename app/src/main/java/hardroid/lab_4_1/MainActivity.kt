@@ -1,13 +1,10 @@
 package hardroid.lab_4_1
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Switch
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.widget.SwitchCompat
 
 /*
@@ -67,6 +64,35 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        val currentNightMode = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
+        when (currentNightMode) {
+            Configuration.UI_MODE_NIGHT_NO -> {
+                Toast.makeText(this,"Also, try to use DARK MODE theme!",Toast.LENGTH_LONG).show();
+            } // Night mode is not active, we're using the light theme
+            Configuration.UI_MODE_NIGHT_YES -> {
+                Toast.makeText(this,"Also, try to use LIGHT MODE theme!",Toast.LENGTH_LONG).show();
+            } // Night mode is active, we're using dark theme
+        }
+
+        }
+
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        val currentSystemMode = newConfig.uiMode and Configuration.UI_MODE_NIGHT_MASK
+
+        when (currentSystemMode) {
+            Configuration.UI_MODE_NIGHT_NO -> {
+                // Night mode is not active
+                Toast.makeText(this,"Also, try to use DARK MODE theme!",Toast.LENGTH_LONG).show();
+            }
+                Configuration.UI_MODE_NIGHT_YES -> {
+                // Night mode is active
+                    Toast.makeText(this,"Also, try to use LIGHT MODE theme!",Toast.LENGTH_LONG).show();
+                }
+
+        }
+
+     }
     }
 
-}

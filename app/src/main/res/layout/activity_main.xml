@@ -160,7 +160,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn"
+                style="@style/Theme.Buttons"
                 android:gravity="center"
                 android:padding="1dp"
                 android:text="@string/plus"
@@ -168,7 +168,8 @@
                 android:textColor="@color/white"
                 android:textSize="35sp"
                 android:textStyle="bold"
-                />
+                android:background="@drawable/btn_light"/>
+
 
             <Button
                 android:id="@+id/minus"
@@ -178,7 +179,7 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn"
+                android:background="@drawable/btn_light"
                 android:gravity="center"
                 android:padding="1dp"
                 android:text="@string/minus"
