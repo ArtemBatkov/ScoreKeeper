@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:textColor="@color/team_a_bg" android:trackTint = "@color/black">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/team_a_bg" />
+            <corners android:radius="25dp" />
+            <size android:width="35dp" android:height="35dp"/>
+            <stroke android:width="3dp"
+                android:color="@color/black"/>
+        </shape>
+
+    </item>
+    <item android:state_checked="true">
+
+        <shape android:shape="rectangle">
+            <solid android:color="@color/team_b_bg" />
+            <corners android:radius="25dp" />
+            <size android:width="35dp" android:height="35dp"/>
+            <stroke android:width="3dp"
+                android:color="@color/black"/>
+        </shape>
+        <color android:color="@color/team_b_bg"/>
+    </item>
+
+
+
+
+</selector>

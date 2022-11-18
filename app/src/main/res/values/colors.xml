@@ -11,6 +11,8 @@
     <color name="black95">#95000000</color>
     <color name="btn_unpressed_light">#DF1C429F</color>
     <color name="btn_pressed_light">#F0AFC6FF</color>
+    <color name="btn_unpressed_dark">#D500F9</color>
+    <color name="btn_pressed_dark">#EA80FC</color>
     <color name="gray">#6E6E6E</color>
     <color name="bg_tgl">#AFA7A7</color>
 

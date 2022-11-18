@@ -63,10 +63,16 @@
     </style>
 
     <style name="Theme.Buttons" parent="Theme.AppCompat.Light.NoActionBar">
-        <selector xmlns:android="http://schemas.android.com/apk/res/android">
-            <item android:state_pressed="false" android:background="@drawable/btn_unpressed" />
-            <item android:state_pressed="true" android:drawable="@drawable/btn_pressed" />
-        </selector>
+         <item name="android:background">@drawable/btn_light </item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="Theme.Switch" parent="Theme.AppCompat.Light.NoActionBar">
@@ -81,10 +87,9 @@
     <style name="Theme.RadioButtons" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/droid_serif</item>
-        <item name="android:layout_marginEnd">10dp</item>
         <item name="android:textSize">27sp</item>
         <item name="android:textStyle">bold</item>
-
-
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
     </style>
 </resources>
