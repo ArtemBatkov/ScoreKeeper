@@ -1,8 +1,11 @@
 package hardroid.lab_4_1
 
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.widget.SwitchCompat
@@ -12,6 +15,34 @@ THIS FILE IS SCOREKEEPER LOGIC
  */
 
 class MainActivity : AppCompatActivity() {
+    
+    private  fun gotoDetails(){
+        try{
+            val intent = Intent(this@MainActivity,Details::class.java)
+            startActivity(intent)
+//            finish()
+        }catch(_:Exception){}
+    }
+    
+    
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return  true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+             R.id.details -> {
+                 Toast.makeText(this,"Details were pressed!",Toast.LENGTH_LONG).show()
+                 gotoDetails()
+             }
+            R.id.settings -> {
+                Toast.makeText(this,"Settings were pressed!",Toast.LENGTH_LONG).show()
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
      private var Score = 0
 
@@ -92,7 +123,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
         }
-
      }
     }
 

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/name"
+                style="@style/Theme.About.Blank"/>
+            <TextView
+                android:text="@string/author_name"
+                style="@style/Theme.About.Blank"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <!-- Surname -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/surname"
+                style="@style/Theme.About.Blank"/>
+            <TextView
+                android:text="@string/author_surname"
+                style="@style/Theme.About.Blank"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <!-- Student ID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/student_id"
+                style="@style/Theme.About.Blank"/>
+            <TextView
+                android:text="@string/student_id_number"
+                style="@style/Theme.About.Blank"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <!-- Course Code -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/course_code"
+                style="@style/Theme.About.Blank"/>
+
+            <TextView
+                android:text="@string/corse_name"
+                style="@style/Theme.About.Blank"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <!-- GitHub licence -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/github_licence"
+                style="@style/Theme.About.Blank"/>
+
+            <TextView
+                android:id="@+id/link_license"
+                android:text="@string/ref_licence"
+                style="@style/Theme.About.Blank"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <!-- GitHub licence -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/github_repo"
+                style="@style/Theme.About.Blank"/>
+
+            <TextView
+                android:id="@+id/link_repo"
+                android:text="@string/ref_repo"
+                style="@style/Theme.About.Blank"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

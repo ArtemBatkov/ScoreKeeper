@@ -13,4 +13,16 @@
     <string name="scr_3">3</string>
     <string name="scr_4">6</string>
     <string name="vs">VS</string>
+    <string name="name"><u>Name</u></string>
+    <string name="author_name">Artem</string>
+    <string name="surname"><u>Surname</u></string>
+    <string name="author_surname">Slonko</string>
+    <string name="course_code"><u>Course Code</u></string>
+    <string name="corse_name">JAV1001\nApp Development for Android</string>
+    <string name="student_id"><u>Student ID</u></string>
+    <string name="student_id_number">#A00257646</string>
+    <string name="github_licence"><u>GitHub Licence</u></string>
+    <string name="ref_licence">Please, visit <a href="https://github.com/ArtemBatkov/JAV1001-ScoreKeeper-Lab-4.1-Lab-5-and-Lab7-A00257646/blob/f2be42008cb77ca743b916682b6435f3dbad7261/LICENSE">License</a></string>
+    <string name="github_repo"><u>GitHub repo</u></string>
+    <string name="ref_repo"><a href="https://github.com/ArtemBatkov/JAV1001-ScoreKeeper-Lab-4.1-Lab-5-and-Lab7-A00257646.git">See the code</a></string>
 </resources>
