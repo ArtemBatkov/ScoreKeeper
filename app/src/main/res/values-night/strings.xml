@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Lab 8</string>
     <string name="vs">VS</string>
     <string name="name"><u>Name</u></string>
     <string name="author_name">Artem</string>
